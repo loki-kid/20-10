@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chúc mừng 20/10 🌸</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas>
+<main>
+  <header class="hero">
+    <span class="badge">20/10</span>
+    <h1>Chúc mừng ngày<br>Phụ nữ Việt Nam</h1>
+    <p id="to" class="to">Gửi tới... 💌</p>
+    <label class="namebox"><span></span>
+      <input id="name" maxlength="24" placeholder="Cán bộ nhập tên vào đây ạ" autocomplete="off"></label>
+    <button class="btn" id="start">Bấm để mở quà 🎁</button>
+  </header>
+
+  <section class="card" id="gift">
+    <h2>Một bức thư nhỏ</h2>
+    <button class="env" id="env" aria-label="Mở thư">💌</button>
+    <p class="hint" id="hint">Chạm vào phong thư nhé</p>
+    <div class="letter" id="letter" aria-live="polite"></div>
+  </section>
+
+  <section>
+    <h2>6 điều ngẫu nhiên về cán bộ ạ (em nghĩ thế)</h2>
+    <div class="grid" id="whys"></div>
+  </section>
+
+  <section class="card center">
+    <h2>Bó hoa của riêng cán bộ ạ</h2>
+    <div class="vase" id="vase" aria-live="polite"></div>
+    <p class="wish" id="wish">Mỗi lần bấm là một bông hoa và một lời chúc 🌷</p>
+    <button class="btn" id="more">Tặng thêm một bông hoa</button>
+    <p class="hint" id="count"></p>
+  </section>
+
+  <footer>
+    Làm bằng cả tấm lòng 💖 (và claude ạ)
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
